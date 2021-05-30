@@ -36,6 +36,7 @@
     ]
   },
   "dependencies": {
+    "@google-cloud/storage": "^5.8.5",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.4",
     "cors": "^2.8.5",
@@ -44,10 +45,15 @@
     "express": "~4.16.1",
     "helmet": "^3.22.0",
     "morgan": "^1.9.1",
+<<<<<<< HEAD
     "node-mailjet": "^3.3.4",
+=======
+    "multer": "^1.4.2",
+>>>>>>> 5c0a0e5 (POST para subir imagenes a google cloud storage ok)
     "pg": "^8.3.3",
     "pg-hstore": "^2.3.3",
-    "sequelize": "^5.x"
+    "sequelize": "^5.x",
+    "stream-converter": "0.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
