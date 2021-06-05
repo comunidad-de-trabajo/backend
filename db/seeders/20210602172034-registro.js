@@ -4,6 +4,7 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert('registro', [
       {
+        estado: 'pendiente',
         nombreComercial: 'adidas',
         provincia: 'buenos aires',
         localidad: 'moron',
@@ -32,6 +33,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        estado: 'pendiente',
         nombreComercial: 'puma',
         provincia: 'buenos aires',
         localidad: 'hurlingham',
@@ -60,6 +62,7 @@ module.exports = {
         updatedAt: new Date(),
       },
       {
+        estado: 'pendiente',
         nombreComercial: 'LG',
         provincia: 'Formosa',
         localidad: 'formosa',
