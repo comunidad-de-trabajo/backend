@@ -16,7 +16,7 @@ module.exports = {
       nombreComercial: {
         type: Sequelize.STRING,
       },
-      provincia: {
+      provinciaActual: {
         type: Sequelize.STRING,
       },
       localidad: {
@@ -32,22 +32,22 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       departamento: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
       },
       razonSocial: {
         type: Sequelize.STRING,
       },
       cuit: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.INTEGER(12),
       },
       tipoEmpleador: {
         type: Sequelize.STRING,
       },
       telefono: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.INTEGER(12),
       },
       /*Tipo-Empresa*/
-      areaInteres: {
+      areaDeInteres: {
         type: Sequelize.STRING,
       },
       sitioWeb: {
@@ -76,16 +76,19 @@ module.exports = {
         type: Sequelize.STRING,
       },
       tipoTelefono1: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
       },
       telefono1: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.INTEGER(12),
       },
       tipoTelefono2: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
       },
       telefono2: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.INTEGER(12),
+      },
+      terminosYCondiciones: {
+        type: Sequelize.BOOLEAN,
       },
       createdAt: {
         allowNull: false,
