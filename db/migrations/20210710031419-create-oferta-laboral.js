@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('Oferta', {
+    await queryInterface.createTable('OfertaLaboral', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -24,16 +24,16 @@ module.exports = {
         type: Sequelize.STRING,
       },
       secundarioCompleto: {
-        type: Sequelize.BOOLEAN,
+        type: Sequelize.STRING,
       },
       paqueteOffice: {
-        type: Sequelize.BOOLEAN,
+        type: Sequelize.STRING,
       },
       licenciaConducir: {
-        type: Sequelize.BOOLEAN,
+        type: Sequelize.STRING,
       },
       edad: {
-        type: Sequelize.BOOLEAN,
+        type: Sequelize.STRING,
       },
       desdeEdad: {
         type: Sequelize.INTEGER,
@@ -42,7 +42,7 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       experienciaPrevia: {
-        type: Sequelize.BOOLEAN,
+        type: Sequelize.STRING,
       },
       experienciaPreviaDescription: {
         type: Sequelize.STRING,
@@ -94,6 +94,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('Oferta');
+    await queryInterface.dropTable('OfertaLaboral');
   },
 };
