@@ -17,6 +17,9 @@ module.exports = {
       rol: {
         type: Sequelize.STRING,
       },
+      reset_password_link: {
+        type: Sequelize.STRING,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
